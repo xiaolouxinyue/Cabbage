@@ -34,6 +34,7 @@ open class NoneTransition: VideoTransition {
     }
 }
 
+///叠加消失
 public class CrossDissolveTransition: NoneTransition {
     
     override public func renderImage(foregroundImage: CIImage, backgroundImage: CIImage, forTweenFactor tween: Float64, renderSize: CGSize) -> CIImage {
@@ -49,6 +50,7 @@ public class CrossDissolveTransition: NoneTransition {
     }
 }
 
+//右滑消失
 public class SwipeTransition: NoneTransition {
     
     override public func renderImage(foregroundImage: CIImage, backgroundImage: CIImage, forTweenFactor tween: Float64, renderSize: CGSize) -> CIImage {
@@ -73,6 +75,7 @@ public class SwipeTransition: NoneTransition {
     
 }
 
+/// 右滑进入
 public class PushTransition: NoneTransition {
     
     override public func renderImage(foregroundImage: CIImage, backgroundImage: CIImage, forTweenFactor tween: Float64, renderSize: CGSize) -> CIImage {
@@ -101,6 +104,7 @@ public class PushTransition: NoneTransition {
     
 }
 
+///上滑进入
 public class BoundingUpTransition: NoneTransition {
     
     override public func renderImage(foregroundImage: CIImage, backgroundImage: CIImage, forTweenFactor tween: Float64, renderSize: CGSize) -> CIImage {
@@ -133,6 +137,7 @@ public class BoundingUpTransition: NoneTransition {
     
 }
 
+///淡入淡出
 public class FadeTransition: NoneTransition {
     
     override public func renderImage(foregroundImage: CIImage, backgroundImage: CIImage, forTweenFactor tween: Float64, renderSize: CGSize) -> CIImage {
